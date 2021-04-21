@@ -1,7 +1,5 @@
 # FileSorting
 
-
-## Setup
 1. edit ```config.json```\
 example: 
 ```json
