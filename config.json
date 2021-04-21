@@ -1,13 +1,11 @@
 {
-  "ignored": ["config.json", "main.py"],
+  "ignored": ["config.json", "main.py", "README.md"],
 
   "sort": {
-    "documents": ["txt", "docx", "doc", "pdf", "json"],
-    "books": ["epub", "mobi"],
+    "documents": ["docx", "doc", "pdf", "txt"],
     "3Dfiles": ["stl", "obj"],
-    "blender": [".blend", ".blend1"],
     "pictures": ["jpg", "png", "webp"],
-    "images": ["iso"],
-    "archives": ["rar", "zip"]
+    "pictures/icons": ["ico"],
+    "archives": ["rar", "zip", "7z"]
   }
 }
