@@ -1,8 +1,10 @@
-import os
+from tkinter import *
 import json
 import sys
+import os
 
 configFilePath = "config.json"
+gui = True
 
 
 def sort():
@@ -34,8 +36,17 @@ for x in range(len(sys.argv)):
         except:
             print("error: path was not defined try -h")
     elif sys.argv[x] == "-c":
-        sort()
-        exit("done")
+        gui = False
 
-sort()
-exit("done")
+if not gui:
+    sort()
+    exit("done")
+
+
+root = Tk()
+
+button_sort = Button(root, text="sort", padx=50,
+                     pady=5, bg="green", fg="white", command=sort)
+button_sort.grid(row=0, column=0)
+
+root.mainloop()
