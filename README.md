@@ -1,7 +1,7 @@
 # FileSorting
 sorting files by extensions in folders
 
-
+### Setup:
 1. edit ```config.json```\
 example: 
 ```json
