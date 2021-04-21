@@ -3,11 +3,9 @@
 
   "sort": {
     "documents": ["txt", "docx", "doc", "pdf", "json"],
-    "books": ["epub", "mobi"],
     "3Dfiles": ["stl", "obj"],
-    "blender": [".blend", ".blend1"],
     "pictures": ["jpg", "png", "webp"],
-    "images": ["iso"],
-    "archives": ["rar", "zip"]
+    "pictures/icons": ["ico"],
+    "archives": ["rar", "zip", "7z"]
   }
 }
