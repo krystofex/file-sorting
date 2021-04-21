@@ -2,7 +2,7 @@
   "ignored": ["config.json", "main.py"],
 
   "sort": {
-    "documents": ["txt", "docx", "doc", "pdf", "json"],
+    "documents": ["docx", "doc", "pdf"],
     "3Dfiles": ["stl", "obj"],
     "pictures": ["jpg", "png", "webp"],
     "pictures/icons": ["ico"],
