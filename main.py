@@ -42,11 +42,26 @@ if not gui:
     sort()
     exit("done")
 
+configFile = json.loads(open(configFilePath).read())
+
 
 root = Tk()
+root.title("file sorting")
+root.geometry("400x400")
 
 button_sort = Button(root, text="sort", padx=50,
-                     pady=5, bg="green", fg="white", command=sort)
+                     pady=5, bg="#00C943", fg="white", command=sort, bd=0)
 button_sort.grid(row=0, column=0)
 
-root.mainloop()
+scrollbar = Scrollbar(root)
+#scrollbar.grid(row=1, column=0)
+
+mylist = Listbox(root, yscrollcommand=scrollbar.set)
+for line in range(50):
+    mylist.insert(END, "condition " + str(line))
+
+mylist.grid(row=1, column=0)
+scrollbar.config(command=mylist.yview)
+
+mainloop()
+# FD4D4D
